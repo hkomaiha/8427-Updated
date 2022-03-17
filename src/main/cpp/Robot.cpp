@@ -24,7 +24,8 @@ void Robot::RobotInit() {
  * autonomous, teleoperated and test.
  *
  * <p> This runs after the mode specific periodic functions, but before
- * LiveWindow and SmartDashboard integrated updating.
+ * LiveWindow and SmartDashboard integrated updatin
+ *g.
  */
 void Robot::RobotPeriodic() {}
 
@@ -59,6 +60,7 @@ void Robot::AutonomousInit() {
 }
 void Robot::AutonomousPeriodic() {
 //std::cout << timer.Get() << std:: endl;
+
 if (double(timer.Get()) <= 1.5) {
   drivetrain.ArcadeDrive (.7,0.0);
 }

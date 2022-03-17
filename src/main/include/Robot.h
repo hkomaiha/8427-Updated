@@ -24,7 +24,7 @@
 #include <frc/Timer.h>
 // #include <VictorSPX.h>
 
-//  using namespace frc;
+using namespace frc;
 
 class Robot : public frc::TimedRobot {
  public:
@@ -43,15 +43,14 @@ class Robot : public frc::TimedRobot {
   std::string m_autoSelected;
   frc::XboxController controller{0};
   
-  WPI_VictorSPX sr1{1};
-  WPI_VictorSPX sr2{2};
-  WPI_VictorSPX sr3{3};  
-  WPI_VictorSPX sr4{4};
+  WPI_VictorSPX sr1{21};
+  WPI_VictorSPX sr2{20};
+  WPI_VictorSPX sr3{11};  
+  WPI_VictorSPX sr4{10};
 
 
-  WPI_TalonSRX Arm{5};
-  WPI_TalonSRX Sr6{6};
-  WPI_TalonSRX intakeMotor{7};
+  WPI_VictorSPX Arm{30};
+  WPI_VictorSPX intakeMotor{31};
 
   frc::Timer timer;
 
